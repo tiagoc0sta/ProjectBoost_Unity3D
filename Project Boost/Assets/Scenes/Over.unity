@@ -178,10 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
-    - target: {fileID: 8232505865167115770, guid: 6b4152525b84876489a1bc4b9478531c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bfaed27ee895ebd4e948fac765e15b94, type: 2}
+    - target: {fileID: 8232505865167115768, guid: 6b4152525b84876489a1bc4b9478531c, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b4152525b84876489a1bc4b9478531c, type: 3}
 --- !u!1 &705507993
@@ -449,8 +449,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091195259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.53, y: 3.3, z: 0}
-  m_LocalScale: {x: 1.7259, y: 1.7259, z: 3.9822197}
+  m_LocalPosition: {x: -1.53, y: 1.8, z: 0}
+  m_LocalScale: {x: 1.7259, y: 3.4200437, z: 3.9822197}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -462,14 +462,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1381377294, guid: 393ff33958f4e434bb851a5d920e1e15, type: 3}
-      propertyPath: m_Drag
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1381377294, guid: 393ff33958f4e434bb851a5d920e1e15, type: 3}
-      propertyPath: m_Constraints
-      value: 56
-      objectReference: {fileID: 0}
     - target: {fileID: 2162874886032665270, guid: 393ff33958f4e434bb851a5d920e1e15, type: 3}
       propertyPath: m_RootOrder
       value: 5
