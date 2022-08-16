@@ -9,15 +9,18 @@ public class ColisionHandler : MonoBehaviour
     [SerializeField] AudioClip success;
     [SerializeField] AudioClip crash;
 
+    [SerializeField] ParticleSystem successParticles;
+    [SerializeField] ParticleSystem crashParticles;
+
     //cache
     AudioSource audioSource;
-
+    
     //State - bool variables
     bool isTansitioning = false;
 
     void Start()
     {
-       audioSource = GetComponent<AudioSource>();
+       audioSource = GetComponent<AudioSource>();       
     }
 
     void OnCollisionEnter(Collision other)
@@ -49,6 +52,7 @@ public class ColisionHandler : MonoBehaviour
         isTansitioning = true;
         audioSource.Stop();
         audioSource.PlayOneShot(success);
+        successParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
     }
@@ -58,6 +62,7 @@ public class ColisionHandler : MonoBehaviour
         isTansitioning = true;
         audioSource.Stop();
         audioSource.PlayOneShot(crash);
+        crashParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
         

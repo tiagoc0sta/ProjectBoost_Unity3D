@@ -46,11 +46,11 @@ public class Movement : MonoBehaviour
 
     void ProcessRotation()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             ApplyRotation(rotationThrust);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             ApplyRotation(-rotationThrust);
         }
